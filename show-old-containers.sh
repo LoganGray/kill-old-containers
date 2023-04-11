@@ -38,7 +38,7 @@ function show_old_containers(){
             # invoke docker show command in the background to prevent
             # possible freezing
             # eval "${show_CMD}" &>/dev/null & disown
-            eval "${SHOW_CMD}"
+            echo "${SHOW_CMD}"
             let "NUM_SHOWED+=1"
         fi
     done
